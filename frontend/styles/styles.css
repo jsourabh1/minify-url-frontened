@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", "sans-serif";
+}
+
+.brand {
+  font-weight: 600;
+}
+
+nav {
+  background-color: #e3fdfd;
+}
+
+.nav-item {
+  font-weight: 400;
+}
+
+.body {
+  background-color: #a6e3e9;
+}
+
+.content {
+  height: 84vh;
+  align-items: center;
+}
+
+.modal-header {
+  background-color: #ff002f;
+  font-weight: 600;
+}
+
+.modal-body {
+  font-weight: 500;
+}
+
+#inner-content {
+  width: 100%;
+}
+
+#spinner {
+  z-index: 1;
+  position: relative;
+  margin: auto;
+}
+
+.card {
+  width: 45%;
+  margin: 15px auto 0;
+  background-color: #eeeeee;
+  border-radius: 50px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.53));
+  position: relative;
+  z-index: 0;
+}
+
+.card-body {
+  align-items: center;
+}
+
+#copy-box {
+  transition: all 0.2s ease-in-out;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-left: 15px;
+  padding-top: 3px;
+  cursor: pointer;
+  background-color: rgb(168, 168, 168, 0.5);
+}
+
+#copy-box:hover {
+  transform: scale(0.8);
+}
+
+.input {
+  width: 50%;
+  margin: 2% auto;
+}
+
+#copy-toast {
+  transition: all 0.1s ease-in-out;
+  position: absolute;
+  z-index: 100;
+  width: 200px;
+  margin-top: 10px;
+  overflow-x: hidden;
+}
+
+#copy-toast-body {
+  justify-content: space-around;
+}
+
+.footer {
+  font-weight: 300;
+  background-color: #71c9ce;
+  min-height: 90px;
+  padding-top: 25px;
+}
+
+.social a {
+  color: black;
+  padding: 5px 7px;
+}
+
+@media (max-width: 499px) {
+  .card {
+    width: 95%;
+  }
+
+  #copy-box {
+    width: 35px;
+    height: 35px;
+    border-radius: 40%;
+    padding-top: 5px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  .card {
+    width: 70%;
+  }
+
+  #copy-box {
+    width: 35px;
+    height: 35px;
+    padding-top: 5px;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+  .card {
+    width: 58%;
+  }
+
+  #copy-box {
+    width: 35px;
+    height: 35px;
+    padding-top: 5px;
+  }
+}
