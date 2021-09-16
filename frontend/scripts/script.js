@@ -13,7 +13,7 @@ document.getElementById('submitButton').addEventListener('click', async function
         showError('Please enter a valid URL!');
     } else {
         const url = input.value;
-        const reqUrl = `https://minify-url-spring-boot.herokuapp.com/api?url=${url}`;
+        const reqUrl = `https://git.heroku.com/minify-java.gitapi?url=${url}`;
         if (isValid(url)) {
             spinner.classList.toggle('visually-hidden');
             const res = await fetch(reqUrl, {
